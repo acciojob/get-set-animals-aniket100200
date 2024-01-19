@@ -14,13 +14,13 @@ class Animal {
 }
 
 class Cat extends Animal {
-  purr() {
+ makeSound() {
     console.log('purr');
   }
 }
 
 class Dog extends Animal {
-  bark() {
+   makeSound() {
     console.log('woof');
   }
 }
