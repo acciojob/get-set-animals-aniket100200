@@ -11,14 +11,14 @@ class Animal {
 
     // Method to make sound
     makeSound() {
-        console.log("The animal makes a sound");
+        console.log(`The ${this.species} makes a sound`);
     }
 }
 
 // Cat subclass
 class Cat extends Animal {
     // Method specific to Cat
-    purr() {
+    makeSound() {
         console.log("purr");
     }
 }
@@ -26,7 +26,7 @@ class Cat extends Animal {
 // Dog subclass
 class Dog extends Animal {
     // Method specific to Dog
-    bark() {
+    makeSound() {
         console.log("woof");
     }
 }
