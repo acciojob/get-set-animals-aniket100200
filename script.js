@@ -1,31 +1,37 @@
-//complete this code
+// Animal class
 class Animal {
-  constructor(species) {
-    this._species = species;
-  }
+    constructor(species) {
+        this._species = species;
+    }
 
-  get species() {
-    return this._species;
-  }
+    // Getter for species
+    get species() {
+        return this._species;
+    }
 
-  makeSound() {
-    console.log('Animal sound');
-  }
+    // Method to make sound
+    makeSound() {
+        console.log("The animal makes a sound");
+    }
 }
 
+// Cat subclass
 class Cat extends Animal {
- makeSound() {
-    console.log('purr');
-  }
+    // Method specific to Cat
+    purr() {
+        console.log("purr");
+    }
 }
 
+// Dog subclass
 class Dog extends Animal {
-   makeSound() {
-    console.log('woof');
-  }
+    // Method specific to Dog
+    bark() {
+        console.log("woof");
+    }
 }
 
-// Do not change the code below this line
+// Assigning classes to window object
 window.Animal = Animal;
 window.Dog = Dog;
 window.Cat = Cat;
