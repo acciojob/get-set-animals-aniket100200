@@ -18,16 +18,26 @@ class Animal {
 // Cat subclass
 class Cat extends Animal {
     // Method specific to Cat
-    makeSound() {
+    purr() {
         console.log("purr");
+    }
+
+    // Overriding makeSound method
+    makeSound() {
+        this.purr();
     }
 }
 
 // Dog subclass
 class Dog extends Animal {
     // Method specific to Dog
-    makeSound() {
+    bark() {
         console.log("woof");
+    }
+
+    // Overriding makeSound method
+    makeSound() {
+        this.bark();
     }
 }
 
